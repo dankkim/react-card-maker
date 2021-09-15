@@ -15,7 +15,7 @@ class AuthService {
     firebase.auth().onAuthStateChanged(user => {
       onUserChanged(user);
     });
-  }  
+  }
 }
 
 export default AuthService;

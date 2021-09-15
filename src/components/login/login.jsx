@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router";
-import Footer from "../footer/footer";
-import Header from "../header/header";
-import styles from "./login.module.css";
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import Footer from '../footer/footer';
+import Header from '../header/header';
+import styles from './login.module.css';
 
 const Login = ({ authService }) => {
   const history = useHistory();
-
   const goToMaker = userId => {
     history.push({
-      pathname: "/maker",
+      pathname: '/maker',
       state: { id: userId },
     });
   };
